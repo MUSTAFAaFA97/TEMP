@@ -4,34 +4,91 @@
     padding: 0;
 }
 body{
-    color: blanchedalmond;
+    color: white;
     background-color: rgb(255, 255, 255);
    
 }
 .parent{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background-image: url("/images/pattern-background-desktop.svg");
     
 }
 .father{
     background-color: black;
-    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
-.son{
-    width: 70%;
-    background-color: rgb(241, 136, 255);
-    margin: 100px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
 }
 img{
-    width: 100px ;
-    height: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: relative;
+    filter: invert(0%) sepia(1%) saturate(288) hue-rotate(950deg) brightness(76%) contrast(90%); 
+}
+.lson{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:400px;
+    height: 400px;
+    background-color:#22223f;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+  
+}
+.lson > h2{
+    margin-top: 85px;
+    text-align: center;
+    grid-column: 1/span 3;
+    grid-row: 1;
+}
+.lson p{
+    grid-row: 2;
+    grid-column: 1/span 3;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.son_1 h2{
+    grid-row: 3;
+    grid-column: 1;
+    text-align: center;
+
+}
+.son_2 h2{
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+}
+.son_3 h2{
+    grid-row: 3;
+    grid-column: 3;
+    text-align: center;
+}
+.son_1 p{
+    grid-row: 4;
+    grid-column: 1;
+    text-align: center;
+    color: rgb(182, 182, 182);
+}
+.son_2 p{
+    grid-row: 4;
+    grid-column: 2;
+    text-align: center;
+    color: rgb(182, 182, 182);
+}
+.son_3 p{
+    grid-row: 4;
+    grid-column: 3;
+    text-align: center;
+    color: rgb(182, 182, 182);
 }
